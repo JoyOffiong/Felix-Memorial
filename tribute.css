@@ -7,7 +7,7 @@
 }
 
 a{
-    color: rgb(125, 180, 149);
+    color: rgb(32, 34, 33);
     text-decoration: none;
 }
 ul{
@@ -46,27 +46,146 @@ ul{
 .buttons{
     display: none;
 }
-.mobile-nav{
+.mobileheader{
     display: none;
 }
 
+.section-wrap{
+  background-image:    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://media.istockphoto.com/photos/beautiful-white-roses-with-a-burning-candle-on-the-dark-background-picture-id1195521382?b=1&k=20&m=1195521382&s=170667a&w=0&h=y94EBmBmdXtSuwbTzxfe5SxIfNqbPGpSgNPXpzi3-wg=);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tribute-wrap{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 4%;
+  color: white;
+  font-size: 26px;
+}
+.section-wrap h3{
+  font-size: 30px;
+  margin-bottom: 3%;
+}
+.section-wrap p{
+  line-height: 40px;
+  font-size: 20px;
+}
+.writer{
+  padding-top: 5%;
+  font-style: italic;
+}
 
 
 /* footer-styling */
 footer{
-    background-color:rgb(155, 173, 146);
-    padding: 4% 0;
+    background-color:rgb(101, 102, 100);
+    padding: 2% 0;
 }
 .footer-wrap{
     width: 90%;
     margin: auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
 }
 .footer-item a{
-    color: black;
-    font-size: 20px;
-    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+}
+.footer-item a:hover{
+    color: rgb(235, 139, 14);
+    
 }
 
+@media( max-width: 1200px){
+    .desktop-link ul{
+         display: none;
+     }
+       .mobileheader {
+         display: flex;
+         justify-content: space-between;
+         padding: 2% 0;
+         padding-left: 2%;
+         align-items: center;
+         justify-content: space-between;
+       }
+     .buttons{
+       z-index: 30;
+       padding: 0;
+       margin-right: 2%;
+       border:  2px solid rgb(220, 231, 233);
+       display: block;
+     }
+ 
+       .nav-toggle {
+         display: block;
+         z-index: 26;
+       }
+       .nav-toggle {
+         cursor: pointer;
+         display: block;
+         border-radius: none;
+         width: 2rem;
+         border: none;
+         background-color: transparent;
+         aspect-ratio: 0.9;
+         transition: 0.3s ease;
+       }
+       button i {
+         color: rgb(8, 9, 8);
+       }
+       .nav-toggle,
+       .nav-toggle2 i {
+         font-size: 23px;
+       
+       }
+       .nav-toggle2 {
+         cursor: pointer;
+         display: none;
+         border-radius: none;
+         border: none;
+         background-color: transparent;
+         aspect-ratio: 0.9;
+         width: 2rem;
+       }
+     
+       nav {
+         margin-left: 0;
+       }
+       .mobileheader {
+         position: absolute;
+         flex-direction: column;
+         top: 10;
+         right: 0px;
+         align-items: none;
+         text-align: center;
+         padding-top: 10%;
+         height: 100vh;
+         width: 100%;
+         line-height: 3rem;
+         font: bold;
+         display: block;
+         transform: translateX(100%);
+         transition: 700ms ease;
+         margin-right: 0;
+         overflow-x: hidden;
+         background-color: rgb(178, 179, 181);
+         z-index: 20;
+     
+       }  
+       .mobileheader li a {
+         color: black;
+       
+       }
+       .footer-wrap{
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-item{
+        margin-bottom: 3%;
+      }
+}

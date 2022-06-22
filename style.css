@@ -7,7 +7,7 @@
 }
 
 a{
-    color: rgb(125, 180, 149);
+    color: rgb(32, 34, 33);
     text-decoration: none;
 }
 ul{
@@ -18,9 +18,13 @@ img{
     height: 100%;
     object-fit: cover;
 }
+html{
+  overflow-x: hidden;
+}
 .main-wrap{
     position: relative;
 background-color: rgb(163, 169, 161);
+overflow-x: hidden;
 }
 
 
@@ -51,58 +55,35 @@ ul{
 .buttons{
     display: none;
 }
-.mobile-nav{
+.mobileheader{
     display: none;
 }
 
 
 /* hero-section */
+
 .hero-section{
-    display: flex;
-    justify-content: space-between;
-    padding: 2% 4%;
-    height: 90vh;
-    background-color:rgb(101, 102, 100);
-    color: white;
-}
-.right{
-    width: 50%;
+     /* background-image:   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://media.istockphoto.com/photos/red-roses-on-a-black-background-postcard-banner-flat-lai-on-the-picture-id1300934467?b=1&k=20&m=1300934467&s=170667a&w=0&h=Y1wtUC7JScfelBqOhsTAVRCpTrIgpq1cJBhQ5qTADLE=); */
+     background-image:    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://media.istockphoto.com/photos/beautiful-white-roses-with-a-burning-candle-on-the-dark-background-picture-id1195521382?b=1&k=20&m=1195521382&s=170667a&w=0&h=y94EBmBmdXtSuwbTzxfe5SxIfNqbPGpSgNPXpzi3-wg=);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
     display: flex;
     align-items: center;
 }
-
-.image{
-  
-    left: 4.5%;
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-}
-.left{
-    width: 30%;
-}
-.felix{
-    width: 70%;
-    /* color: white; */
-}
-.felix h3{
-    font-size: 50px;
-    padding-bottom: 1%;
-    width: 50%;
-}
-.felix h4{
-    padding-bottom: 2%;
-    font-size: 20px;
-}
-.felix p{
-    font-size: 18px;
+.text{
+    width: 60%;
+    margin: auto;
+    font-size: 47px;
+    color: white;
 }
 
 
 
 /* preamble */
 .preamble{
-    background-color: rgb(218, 225, 231);
+    background-color: rgb(185, 194, 212);
     padding: 7% 0;
 }
 .heading{
@@ -129,72 +110,15 @@ ul{
 }
 .preamble-image img{
     object-fit: contain;
-}
-
-
-/* swiper */
-
-  .column-wrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    padding:4%;
-  }
-  .column{
-    display: block;
-    background-color: rgb(218, 225, 231);
     width: 100%;
-    box-shadow: 0px 1px 1px rgba(27, 9, 9, 0.2), -0px -1px 1px rgba(27, 9, 9, 0.2);
-}
-.picture{
-    height: 300px;
-}
-.picture img{
     height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
-.text{
-    padding: 4%;
-    text-align: center;
-}
-.text p{
-    line-height: 35px;
-}
-button{
-    padding: 4%;
-    margin-top: 4%;
-    background-color:rgb(101, 102, 100);
-    border: none;
-    border-radius: 10px;
-}
- button a{
-    color: white;
- }
-
- .swiper {
-    margin-top: 3%;
-    width:80%;
-    height: 550px;
-    margin-bottom: 3%;
-  }
-
-  .swiper-button-prev,  .swiper-button-next{
-    height: 20px;
-    color: white;
-  }
-.swiper-scrollbar{
-    display: none;
-}
-
-
 
 
 /* footer-styling */
 footer{
-    background-color:rgb(101, 102, 100);
+    background-color: rgb(218, 225, 231);
+   
     padding: 2% 0;
 }
 .footer-wrap{
@@ -205,10 +129,117 @@ footer{
 
 }
 .footer-item a{
-    color: white;
+    color: black;
     font-size: 16px;
 }
 .footer-item a:hover{
     color: rgb(235, 139, 14);
     
+}
+
+
+@media( max-width: 1200px){
+    .desktop-link ul{
+         display: none;
+     }
+       .mobileheader {
+         display: flex;
+         justify-content: space-between;
+         padding: 2% 0;
+         padding-left: 2%;
+         align-items: center;
+         justify-content: space-between;
+       }
+     .buttons{
+       z-index: 30;
+       padding: 0;
+       margin-right: 2%;
+       border:  2px solid rgb(220, 231, 233);
+       display: block;
+     }
+ 
+       .nav-toggle {
+         display: block;
+         z-index: 26;
+       }
+       .nav-toggle {
+         cursor: pointer;
+         display: block;
+         border-radius: none;
+         width: 2rem;
+         border: none;
+         background-color: transparent;
+         aspect-ratio: 0.9;
+         transition: 0.3s ease;
+       }
+       button i {
+         color: rgb(8, 9, 8);
+       }
+       .nav-toggle,
+       .nav-toggle2 i {
+         font-size: 23px;
+       
+       }
+       .nav-toggle2 {
+         cursor: pointer;
+         display: none;
+         border-radius: none;
+         border: none;
+         background-color: transparent;
+         aspect-ratio: 0.9;
+         width: 2rem;
+       }
+     
+       nav {
+         margin-left: 0;
+       }
+       .mobileheader {
+         position: absolute;
+         flex-direction: column;
+         top: 10;
+         right: 0px;
+         align-items: none;
+         text-align: center;
+         padding-top: 10%;
+         height: 100vh;
+         width: 100%;
+         line-height: 3rem;
+         font: bold;
+         display: block;
+         transform: translateX(100%);
+         transition: 700ms ease;
+         margin-right: 0;
+         overflow-x: hidden;
+         background-color: rgb(178, 179, 181);
+         z-index: 20;
+     
+       }  
+       .mobileheader li a {
+         color: black;
+       
+       }
+       .footer-wrap{
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-item{
+        margin-bottom: 3%;
+      }
+}
+@media(max-width:768px){
+  .preamble-content{
+    display:block;
+   
+}
+  .preamble-text{
+    width: 100%;
+    margin: auto;
+    line-height: 50px;
+    font-size: 18px;
+}
+.preamble-image{
+    width: 100%;
+    height: 400px;
+}
+
 }

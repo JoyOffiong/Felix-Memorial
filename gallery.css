@@ -11,6 +11,9 @@ a{
     color: rgb(67, 66, 66);
     text-decoration: none;
 }
+html{
+  overflow-x: hidden;
+}
 ul{
     list-style: none;
 }
@@ -20,7 +23,7 @@ img{
     object-fit: cover;
 }
 .main-wrap{
-    position: relative;
+ position: relative;
 background-color: rgb(163, 169, 161);
 }
 
@@ -52,14 +55,13 @@ ul{
 .buttons{
     display: none;
 }
-.mobile-nav{
+.mobileheader{
     display: none;
 }
 
 /* gallery-styling */
 .gallery{
-    background-color: rgb(67, 66, 66);
-    background-color: rgb(68, 66, 66);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://media.istockphoto.com/photos/day-of-memory-and-sorrow-remember-and-mourn-two-white-candles-with-picture-id1185497799?b=1&k=20&m=1185497799&s=170667a&w=0&h=LFv5k-3fj4daIW_VZyjqgHyuiaCIiPeRt-sUw7AXZkI=);
     padding-top: 4%;
     padding-bottom: 4%;
 }
@@ -69,17 +71,20 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 4%;
-    margin-bottom: 4%; */
 }
 .image{
         width: 30%;
-        height: 250px;
+        height: 300px;
         transform: scale(1.1);
+        
 
 }
 .image img{
     transition: 0.7s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
 }
 .image img:hover{
     transform: scale(1);
@@ -96,7 +101,7 @@ ul{
 
 /* footer-styling */
 footer{
-    background-color:rgb(155, 173, 146);
+    background-color:rgb(101, 102, 100);
     padding: 2% 0;
 }
 .footer-wrap{
@@ -114,3 +119,107 @@ footer{
     color: rgb(235, 139, 14);
     
 }
+@media( max-width: 1200px){
+    .desktop-link ul{
+         display: none;
+     }
+       .mobileheader {
+         display: flex;
+         justify-content: space-between;
+         padding: 2% 0;
+         padding-left: 2%;
+         align-items: center;
+         justify-content: space-between;
+       }
+     .buttons{
+       z-index: 30;
+       padding: 0;
+       margin-right: 2%;
+       border:  2px solid rgb(220, 231, 233);
+       display: block;
+     }
+ 
+       .nav-toggle {
+         display: block;
+         z-index: 26;
+       }
+       .nav-toggle {
+         cursor: pointer;
+         display: block;
+         border-radius: none;
+         width: 2rem;
+         border: none;
+         background-color: transparent;
+         aspect-ratio: 0.9;
+         transition: 0.3s ease;
+       }
+       button i {
+         color: rgb(8, 9, 8);
+       }
+       .nav-toggle,
+       .nav-toggle2 i {
+         font-size: 23px;
+       
+       }
+       .nav-toggle2 {
+         cursor: pointer;
+         display: none;
+         border-radius: none;
+         border: none;
+         background-color: transparent;
+         aspect-ratio: 0.9;
+         width: 2rem;
+       }
+     
+       nav {
+         margin-left: 0;
+       }
+       .mobileheader {
+         position: absolute;
+         flex-direction: column;
+         top: 10;
+         right: 0px;
+         align-items: none;
+         text-align: center;
+         padding-top: 10%;
+         height: 100vh;
+         width: 100%;
+         line-height: 3rem;
+         font: bold;
+         display: block;
+         transform: translateX(100%);
+         transition: 700ms ease;
+         margin-right: 0;
+         overflow-x: hidden;
+         background-color: rgb(178, 179, 181);
+         z-index: 20;
+     
+       }  
+       .mobileheader li a {
+         color: black;
+       
+       }
+       .footer-wrap{
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-item{
+        margin-bottom: 3%;
+      }
+}
+@media(max-width:768px){
+  .gallery{
+    padding-top: 10%;
+   }
+   .row{
+    display: block;
+    margin-bottom: 5%;
+
+   }
+   .image{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2%;
+   }
+}
+ 
