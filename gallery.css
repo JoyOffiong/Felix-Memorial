@@ -1,68 +1,8 @@
 
-/* general styling */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a{
-    color: rgb(125, 180, 149);
-    color: rgb(67, 66, 66);
-    text-decoration: none;
-}
-html{
-  overflow-x: hidden;
-}
-ul{
-    list-style: none;
-}
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.main-wrap{
- position: relative;
-background-color: rgb(163, 169, 161);
-}
-
-
-/* header styling */
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2% 8%;
-    background-color: rgb(218, 225, 231);
-}
-.name{
-    width: 30%;
-    font-size: 20px;
-    color: rgb(235, 139, 14);
-
-}
-nav{
-    width: 50%;
-}
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.buttons{
-    display: none;
-}
-.mobileheader{
-    display: none;
-}
-
 /* gallery-styling */
 .gallery{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://media.istockphoto.com/photos/day-of-memory-and-sorrow-remember-and-mourn-two-white-candles-with-picture-id1185497799?b=1&k=20&m=1185497799&s=170667a&w=0&h=LFv5k-3fj4daIW_VZyjqgHyuiaCIiPeRt-sUw7AXZkI=);
-    padding-top: 4%;
+  background-color: #eee;
+  padding-top: 4%;
     padding-bottom: 4%;
 }
     .row{
@@ -74,7 +14,7 @@ ul{
 }
 .image{
         width: 30%;
-        height: 300px;
+        height: 200px;
         transform: scale(1.1);
         
 
@@ -83,7 +23,8 @@ ul{
     transition: 0.7s ease;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-position: top;
+    object-fit: cover;
 
 }
 .image img:hover{
@@ -99,29 +40,7 @@ ul{
 
 
 
-/* footer-styling */
-footer{
-    background-color:rgb(101, 102, 100);
-    padding: 2% 0;
-}
-.footer-wrap{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
 
-}
-.footer-wrap .name{
-  margin-bottom: 2%;
-}
-.footer-item a{
-    color: white;
-    font-size: 16px;
-}
-.footer-item a:hover{
-    color: rgb(235, 139, 14);
-    
-}
 @media( max-width: 1200px){
     .desktop-link ul{
          display: none;
@@ -178,7 +97,7 @@ footer{
          margin-left: 0;
        }
        .mobileheader {
-         position: absolute;
+         position: fixed;
          flex-direction: column;
          top: 10;
          right: 0px;
@@ -201,13 +120,9 @@ footer{
        .mobileheader li a {
          color: black;
        
-       }
-       .footer-wrap{
-        flex-direction: column;
-      }
-      .footer-item{
-        margin-bottom: 3%;
-      }
+     
+
+
 }
 @media(max-width:768px){
   .gallery{
@@ -224,4 +139,4 @@ footer{
     margin-bottom: 2%;
    }
 }
- 
+}

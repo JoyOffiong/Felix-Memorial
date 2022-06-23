@@ -1,54 +1,4 @@
 
-/* general styling */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a{
-    color: rgb(32, 34, 33);
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-.main-wrap{
-    position: relative;
-background-color: rgb(163, 169, 161);
-}
-
-
-/* header styling */
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2% 8%;
-    background-color: rgb(218, 225, 231);
-}
-.name{
-    width: 30%;
-    font-size: 20px;
-    color: rgb(235, 139, 14);
-
-}
-nav{
-    width: 50%;
-}
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.buttons{
-    display: none;
-}
-.mobileheader{
-    display: none;
-}
 
 .section-wrap{
   background-image:    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://media.istockphoto.com/photos/beautiful-white-roses-with-a-burning-candle-on-the-dark-background-picture-id1195521382?b=1&k=20&m=1195521382&s=170667a&w=0&h=y94EBmBmdXtSuwbTzxfe5SxIfNqbPGpSgNPXpzi3-wg=);
@@ -79,27 +29,7 @@ ul{
 }
 
 
-/* footer-styling */
-footer{
-    background-color:rgb(101, 102, 100);
-    padding: 2% 0;
-}
-.footer-wrap{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
-}
-.footer-item a{
-    color: white;
-    font-size: 18px;
-}
-.footer-item a:hover{
-    color: rgb(235, 139, 14);
-    
-}
 
 @media( max-width: 1200px){
     .desktop-link ul{
@@ -157,7 +87,7 @@ footer{
          margin-left: 0;
        }
        .mobileheader {
-         position: absolute;
+         position:fixed;
          flex-direction: column;
          top: 10;
          right: 0px;
@@ -181,11 +111,5 @@ footer{
          color: black;
        
        }
-       .footer-wrap{
-        flex-direction: column;
-        align-items: center;
-      }
-      .footer-item{
-        margin-bottom: 3%;
-      }
+   
 }

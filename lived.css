@@ -1,68 +1,9 @@
 
-/* general styling */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a{
-    color: rgb(32, 34, 33);
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-html{
-    overflow-x: hidden;
-}
-
-.main-wrap{
-    position: relative;
-    background-color: rgb(163, 169, 161);
-    font-family: "Poppins", sans-serif;
-
-}
-
-
-/* header styling */
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2% 8%;
-    background-color: rgb(218, 225, 231);
-    z-index: 40px;
-}
-.name{
-    width: 30%;
-    font-size: 20px;
-    color: rgb(235, 139, 14);
-
-}
-nav{
-    width: 50%;
-}
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.buttons{
-    display: none;
-}
-.mobileheader{
-    display: none;
-}
-
-
 /* main-section  */
 .section-wrap{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://media.istockphoto.com/photos/day-of-memory-and-sorrow-remember-and-mourn-two-white-candles-with-picture-id1185497799?b=1&k=20&m=1185497799&s=170667a&w=0&h=LFv5k-3fj4daIW_VZyjqgHyuiaCIiPeRt-sUw7AXZkI=);
+    background-color:#eee;
     padding: 3% 0;
-    color: white;
+    color: black;
 }
 .heading{
 
@@ -93,12 +34,13 @@ ul{
 }
 .image{
     width: 50%;
-    height: 300px;
+    height: 400px;
 }
 .image img{
     width:100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
 }
 .text{
     width: 50%;
@@ -112,27 +54,7 @@ ul{
 }
 
 
-/* footer-styling */
-footer{
-    background-color: rgb(218, 225, 231);
-    padding: 2% 0;
-}
-.footer-wrap{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
-}
-.footer-item a{
-    color: white;
-    font-size: 18px;
-}
-.footer-item a:hover{
-    color: rgb(235, 139, 14);
-    
-}
 
 @media( max-width: 1200px){
    .desktop-link ul{
@@ -219,13 +141,7 @@ footer{
       .text{
         width: 100%;
       }
-      .footer-wrap{
-        flex-direction: column;
-      }
-      .footer-item{
-        margin-bottom: 3%;
-      }
-}
+     
 @media(max-width:768px){
       /* main-section-wrap */
       .section-wrap{
@@ -237,4 +153,5 @@ footer{
       .image{
         width: 100%;
       }
+}
 }

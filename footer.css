@@ -1,0 +1,38 @@
+/* footer-styling */
+footer{
+    background-color:  rgb(163, 160, 160);
+    padding: 1% 0;
+    padding-top: 2%;
+}
+.footer-wrap{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.footer-wrap .name{
+  margin-bottom: 3%;
+}
+.footer-item a{
+    color: white;
+    font-size: 20px;
+}
+.footer-item a:hover{
+    color: rgb(235, 139, 14);
+    
+    
+}
+
+
+
+@media(max-width:768px){
+    .footer-wrap{
+        flex-direction: column;
+    
+      }
+      .footer-item{
+        margin-bottom: 3%;
+      }
+}

@@ -9,7 +9,7 @@ menuButton.addEventListener('click', () => {
         menuButton.style.display='none'
         closeButton.style.display = 'block'
         navigationMenu.style.transform = 'translateX(0%)'
-        mainWrap.style.overflow= 'hidden'
+        mainWrap.style.overflowx= 'hidden'
 })
  
     closeButton.addEventListener('click', () => {
