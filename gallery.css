@@ -2,7 +2,7 @@
 /* gallery-styling */
 .gallery{
   background-color: #eee;
-  padding-top: 4%;
+  padding-top:3%;
     padding-bottom: 4%;
 }
     .row{
@@ -16,8 +16,6 @@
         width: 30%;
         height: 200px;
         transform: scale(1.1);
-        
-
 }
 .image img{
     transition: 0.7s ease;
@@ -27,16 +25,10 @@
     object-fit: cover;
 
 }
-.image img:hover{
-    transform: scale(1);
-}
 .longer{
         height: 350px;
 }
-.image12 img{
-    height: 250px;
-    object-fit: contain;
-}
+
 
 
 
@@ -119,11 +111,10 @@
        }  
        .mobileheader li a {
          color: black;
-       
-     
-
-
 }
+        .image, .row{
+          margin-bottom: 15%;
+        }
 @media(max-width:768px){
   .gallery{
     padding-top: 10%;

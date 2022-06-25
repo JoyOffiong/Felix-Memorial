@@ -212,7 +212,11 @@ img{
   .text{
     font-size: 30px;
   }
+  .preamble{
+   padding-top: 5%;
+  }
   .preamble-content{
+    margin-top: 2%;
     display:block;
    
 }
