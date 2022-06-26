@@ -91,32 +91,10 @@
     height: 550px;
     object-fit: contain;
 }
-
-#social-life{
-    margin-bottom: 0;
-}
-
-.religious-life, .social-life{
-    width: 100%;
-}
-.religious-life h3, .social-life h3{
-    font-size: 40px;
-    color: rgb(235, 139, 14);
-    padding-bottom: 4%;
-}
-.religious-life p, .social-life p{
-    font-size: 18px;
-    line-height: 30px;
-    border: none;
-    border-left: 1px solid white;
-    padding-left: 2%;
-}
-#community-life{
-    margin-bottom: 0;
-}
+ 
 
 /* more-images styling */
-.just-pictures{
+/* .just-pictures{
     width: 90%;
     margin: auto;
     display: flex;
@@ -132,7 +110,7 @@
     height: 100%;
     object-fit: contain;
 }
-
+ */
 
 
 /* media queries */
@@ -231,7 +209,7 @@
         padding: 10px;
     
     } */
-    
+/*     
     .mobileheader li:hover + .dropdown-menu  {
         display: block;
         position: absolute;
@@ -251,7 +229,7 @@
         width: 120px;
        
     
-    } 
+    }  */
     /* .dropdown-menu ul li{
         transform: translateY(100%);
     } 
@@ -260,7 +238,25 @@
         transform:  translateY(0%);
         pointer-events: auto;
    }  */
+
+   /* .list .caret-button{
+    background-color: transparent;
+    border: none;
+   }
+
+  .dropdown-parent{
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    max-width: 0;
+    overflow: hidden;
+    transition: max-height 0.6s;
+  } */
 }
+
 
 @media(max-width:768px){
     .pictures{
