@@ -27,6 +27,7 @@ footer {
 footer .name {
   color: white;
   font-size: 24px;
+  width: unset;
 }
 
 .copy {

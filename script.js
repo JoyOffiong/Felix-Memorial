@@ -25,6 +25,7 @@ const swiper = new Swiper(".swiper", {
     delay: 2500,
     disableOnInteraction: false,
   },
+  speed: 1000,
   loop: true,
   breakpoints: {
     1200: {
